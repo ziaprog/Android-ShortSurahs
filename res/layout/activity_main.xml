@@ -4,9 +4,15 @@
     android:orientation="vertical" >
 
     <Button
-        android:id="@+id/buttonKawsar"
+        android:id="@+id/ButtonKawsar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="kawsar" />
+
+    <Button
+        android:id="@+id/buttonAsr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asr" />
 
 </LinearLayout>

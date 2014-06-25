@@ -29,11 +29,11 @@ public class MainActivity extends ActionBarActivity {
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
 		*/
-		Button  b1=(Button) findViewById(R.id.buttonKawsar);
-		 //Button b2 = (Button) findViewById(R.id.button2);
+		Button  btnKawsar=(Button) findViewById(R.id.ButtonKawsar);
+		 Button btnAsr = (Button) findViewById(R.id.buttonAsr);
 		 
-		 
-		 b1.setOnClickListener(new OnClickListener() {
+		 //kawsar
+		 btnKawsar.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
@@ -51,6 +51,27 @@ public class MainActivity extends ActionBarActivity {
 				
 			}
 		});
+		 
+		 //Asr
+		 btnAsr.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				
+				Intent myIntent = new Intent(MainActivity.this, selected.class);
+				myIntent.putExtra("key", "al_asr03"); //Optional parameters
+				MainActivity.this.startActivity(myIntent);
+				
+			
+				stopPlaying();
+				mp=MediaPlayer.create(MainActivity.this, R.raw.al_asr03);
+				mp.start();
+				
+				
+			}
+		});
+		 
 		 
 		
 	}
