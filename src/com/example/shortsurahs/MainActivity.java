@@ -40,12 +40,12 @@ public class MainActivity extends ActionBarActivity {
 				// TODO Auto-generated method stub
 				
 				Intent myIntent = new Intent(MainActivity.this, selected.class);
-				myIntent.putExtra("key", "kawsar"); //Optional parameters
+				myIntent.putExtra("key", "al_kauthar08"); //Optional parameters
 				MainActivity.this.startActivity(myIntent);
 				
 			
 				stopPlaying();
-				mp=MediaPlayer.create(MainActivity.this, R.raw.kawsar);
+				mp=MediaPlayer.create(MainActivity.this, R.raw.al_kauthar08);
 				mp.start();
 				
 				
